@@ -2,12 +2,6 @@
 *{
     font-family: "DM sans";
 }
-/* .container{
-    display: flex;
-    flex-flow: horizontal;
-    justify-content: center;
-    z-index: -99;
-} */
 .mainPage{
     position: relative;
     display: flex;
