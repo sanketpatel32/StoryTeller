@@ -8,7 +8,9 @@ export default defineConfig({
     port: 3000,
     proxy: {
       "/api": {
-        target: "https://storyteller-1-dkgm.onrender.com",
+        target: "https://storyteller-et2y.onrender.com",
+        changeOrigin: true,
+        secure: false,
       },
     },
     
