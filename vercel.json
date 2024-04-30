@@ -5,7 +5,7 @@
     "rewrites": [
         {
             "source": "/client/(.*)",
-            "destination": "/client/server.js"
+            "destination": "/server/server.js"
         }
     ]
 }
