@@ -10,7 +10,7 @@ import storyRoutes from "./routes/story.routes.js";
 
 dotenv.config();
 const app = express()
-const __dirname = "./opt/render/project/";
+const __dirname = path.resolve();
 
 app.use(express.json());
 app.use(express.static(path.join( __dirname,"/client/dist")))
@@ -44,6 +44,5 @@ const port  = process.env.PORT || 8000
 app.listen(port, () => {
     connectToMongoDB();
     console.log(`Hello`)
-    console.log(__dirname)
 })
 
