@@ -10,7 +10,7 @@ import storyRoutes from "./routes/story.routes.js";
 
 dotenv.config();
 const app = express()
-const __dirname = path.resolve();
+const __dirname = "./opt/render/project/";
 
 app.use(express.json());
 app.use(express.static(path.join( __dirname,"/client/dist")))
