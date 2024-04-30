@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       "/api": {
-        target: "https://story-teller-app-two.vercel.app",
+        target: "https://storyteller-1-dkgm.onrender.com",
       },
     },
     
