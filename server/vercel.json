@@ -1,20 +1,11 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "./server/server.js",
-            "use": "@vercel/node"
-        },
-        {
-            "src": "./client/build", 
-            "use": "@vercel/static"
-        }
-    ],
-
+    "buildCommand": "cd client && npm install && npm run build",
+    "outputDirectory": "client/dist",
+    "framework": "vite",
     "rewrites": [
         {
-            "source": "/(.*)",
-            "destination": "/backend/server.js"
+            "source": "/client/(.*)",
+            "destination": "/client/server.js"
         }
     ]
 }
