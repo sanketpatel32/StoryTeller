@@ -44,5 +44,6 @@ const port  = process.env.PORT || 8000
 app.listen(port, () => {
     connectToMongoDB();
     console.log(`Hello`)
+    console.log(__dirname)
 })
 
